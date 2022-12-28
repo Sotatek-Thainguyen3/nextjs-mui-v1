@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const url = process.env.NEXT_PUBLIC_API_URL;
   return (
     <div className={styles.container}>
       <Head>
@@ -15,7 +16,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js: {process.env.NEXT_PUBLIC_API_URL}</code>
+          Get started by editing <code>pages/index.js: {url}</code>
         </p>
       </main>
 
